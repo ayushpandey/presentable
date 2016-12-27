@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    <script>
+    if (annyang) {
+      alert("Loaded");
+      // Let's define a command.
+      var commands = {
+        'Next': function() { alert('Hello world!'); }
+      };
+
+      // Add our commands to annyang
+      annyang.addCommands(commands);
+
+      // Start listening.
+      annyang.start();
+
+    }
+    </script>
+  </head>
+</html>
